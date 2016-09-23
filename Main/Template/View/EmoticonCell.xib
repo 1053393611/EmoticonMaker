@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="gTV-IL-0wX" customClass="EmoticonCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJG-gr-ZMG">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ty6-sp-jjl" customClass="CustomLabel">
+                        <rect key="frame" x="8" y="72" width="84" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="53v-46-O8I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gif.png" translatesAutoresizingMaskIntoConstraints="NO" id="znH-Df-odR">
+                        <rect key="frame" x="70" y="8" width="22" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="2ah-U4-czZ"/>
+                            <constraint firstAttribute="height" constant="14" id="BJF-Fl-rK1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="znH-Df-odR" secondAttribute="trailing" constant="8" id="8df-ys-3zD"/>
+                <constraint firstAttribute="trailing" secondItem="HJG-gr-ZMG" secondAttribute="trailing" id="95L-jR-3kH"/>
+                <constraint firstItem="znH-Df-odR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="c4J-uZ-X9I"/>
+                <constraint firstAttribute="bottom" secondItem="Ty6-sp-jjl" secondAttribute="bottom" constant="8" id="eoD-ah-kUP"/>
+                <constraint firstItem="Ty6-sp-jjl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="gaO-r9-oTL"/>
+                <constraint firstAttribute="bottom" secondItem="HJG-gr-ZMG" secondAttribute="bottom" id="hoC-5Y-g3E"/>
+                <constraint firstAttribute="trailing" secondItem="Ty6-sp-jjl" secondAttribute="trailing" constant="8" id="myJ-P2-Yk2"/>
+                <constraint firstItem="HJG-gr-ZMG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uhm-Ne-ugg"/>
+                <constraint firstItem="HJG-gr-ZMG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v1s-FZ-CZX"/>
+            </constraints>
+            <size key="customSize" width="100" height="111"/>
+            <connections>
+                <outlet property="bgImageView" destination="HJG-gr-ZMG" id="5t8-PG-GMo"/>
+                <outlet property="gifImageView" destination="znH-Df-odR" id="4Fl-7R-FjU"/>
+                <outlet property="textLabel" destination="Ty6-sp-jjl" id="mZC-Hr-eTg"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="341.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gif.png" width="22" height="14"/>
+        <image name="loading.png" width="80" height="80"/>
+    </resources>
+</document>
